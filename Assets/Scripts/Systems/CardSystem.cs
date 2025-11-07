@@ -17,14 +17,14 @@ public class CardSystem : Singleton <CardSystem>
 
     void OnEnable()
     {
-        ActionSystem.AttachPerformer<DrawCardGA>(DrawCardsPerformer);
+        ActionSystem.AttachPerformer<DrawCardsGA>(DrawCardsPerformer);
         ActionSystem.AttachPerformer<DiscardAllCardsGA>(DiscardAllCardsPerformer);
         ActionSystem.SubscribeReaction<EnemyTurnGA>(EnemyTurnPreReaction, ReactionTiming.PRE);
         ActionSystem.SubscribeReaction<EnemyTurnGA>(EnemyTurnPostReaction, ReactionTiming.POST);
     }
     void OnDisable()
     {
-        ActionSystem.DetachPerformer<DrawCardGA>();
+        ActionSystem.DetachPerformer<DrawCardsGA>();
         ActionSystem.DetachPerformer<DiscardAllCardsGA>();
         ActionSystem.UnsubscribeReaction<EnemyTurnGA>(EnemyTurnPreReaction, ReactionTiming.PRE);
         ActionSystem.UnsubscribeReaction<EnemyTurnGA>(EnemyTurnPostReaction, ReactionTiming.POST);
@@ -43,7 +43,7 @@ public class CardSystem : Singleton <CardSystem>
 
     // Performers
 
-    private IEnumerator DrawCardsPerformer(DrawCardGA drawCardGA)
+    private IEnumerator DrawCardsPerformer(DrawCardsGA drawCardGA)
     {
         int actualAmount = Math.Min(drawCardGA.Amount, drawPile.Count);
         int notDrawnAmount = drawCardGA.Amount - actualAmount;
@@ -80,7 +80,7 @@ public class CardSystem : Singleton <CardSystem>
     }
     private void EnemyTurnPostReaction(EnemyTurnGA enemyTurnGA)
     {
-        DrawCardGA drawCardGA = new(5);
+        DrawCardsGA drawCardGA = new(5);
         ActionSystem.Instance.AddReaction(drawCardGA);
     }
 
