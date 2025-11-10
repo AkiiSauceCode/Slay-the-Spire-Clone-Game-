@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2312599761716040620}
   - component: {fileID: 6686795733485576341}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: CardBackGround
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99,7 +99,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4245006032991562446}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: 'Wrapper '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 7117840539570917464}
   - component: {fileID: 7790201050780562083}
   - component: {fileID: 507827326207088618}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: CardView
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -224,7 +224,7 @@ GameObject:
   m_Component:
   - component: {fileID: 199508557335212078}
   - component: {fileID: 5560100950638018947}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -315,7 +315,7 @@ GameObject:
   - component: {fileID: 1591026219332541465}
   - component: {fileID: 397344416948420715}
   - component: {fileID: 7835301907818945224}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -494,7 +494,7 @@ GameObject:
   - component: {fileID: 3617448294065321434}
   - component: {fileID: 6565759471171651068}
   - component: {fileID: 1393938552886465006}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Description
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -673,7 +673,7 @@ GameObject:
   - component: {fileID: 3199745338683756479}
   - component: {fileID: 4765710233618392721}
   - component: {fileID: 4254292375839518793}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Mana
   m_TagString: Untagged
   m_Icon: {fileID: 0}
