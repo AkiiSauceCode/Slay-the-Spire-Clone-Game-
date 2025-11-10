@@ -74,7 +74,8 @@ public class CardSystem : Singleton <CardSystem>
         hand.Clear();
     }
 
-    private IEnumerator PlayCardPerformer(PlayCardGA playCardGA) {
+    private IEnumerator PlayCardPerformer(PlayCardGA playCardGA) 
+    {
         hand.Remove(playCardGA.Card);
         CardView cardView = handView.RemoveCard(playCardGA.Card);
         yield return DiscardCard(cardView);

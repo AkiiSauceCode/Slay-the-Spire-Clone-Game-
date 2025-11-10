@@ -63,7 +63,7 @@ public class CardView : MonoBehaviour
       if (ManaSystem.Instance.HasEnoughMana(Card.Mana) && Physics.Raycast(transform.position, Vector3.forward, out RaycastHit hitInfo, 10f, dropLayer))
 
       {
-         PlayCardGA playCardGA = new(Card);
+         PlayCardGA playCardGA = new(Card, this);
          ActionSystem.Instance.Perform(playCardGA);
 
          Debug.Log("Played Card: " + Card.Title);

@@ -16,7 +16,7 @@ public class HandView : MonoBehaviour
         cards.Add(cardView);
         yield return UpdateCardPositions(0.15f);
     }
-    public CardView RemoveCard(Card card)
+    public CardView RemoveCard(Card card, float updateDuration = 0.15f)
     {
         CardView cardView = GetCardView(card);
         if (cardView == null) return null;
