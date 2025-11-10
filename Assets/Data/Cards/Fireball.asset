@@ -12,6 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1ef201f38834ab4392a4cd749eec579, type: 3}
   m_Name: Fireball
   m_EditorClassIdentifier: Assembly-CSharp::CardData
-  <Description>k__BackingField: Deal 4 damage to an enemy
+  <Description>k__BackingField: Deal 2 damage to enemy
   <Mana>k__BackingField: 2
   <Image>k__BackingField: {fileID: 21300000, guid: d61cb0460ab3c924d8bb75e5f4771682, type: 3}
+  <Effects>k__BackingField: []
+  references:
+    version: 2
+    RefIds: []
